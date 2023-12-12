@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* ------------------------------------ Main style ---------------------------------------*/
+
+.main-container {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: #230e2b;
+    position: relative;
+}
+
+.main-link-bt {
+    display: flex;
+    width: 172px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    align-items: center;
+    border: 3px solid  #EE0979;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.banner_1 {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    width: 20%;
+}
+.banner_2 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 90%;
+    top: 10%;
+    width: 20%;
+}
+.main-input-text {
+    padding: 10px 25px;
+    display: flex;
+    border-radius: 500px;
+    background: #42204E no-repeat;
+    width: 380px;
+    height: 60px;
+    flex-shrink: 0;
+    align-items: center;
+}
+.main-input-text img {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+}
+.main-input-text input {
+    color: #8B5D9A;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    float: right;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.main-input-text input::placeholder {
+    color: #8B5D9A;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.main-bt {
+    position: relative;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 500px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+    box-shadow: 0 20px 30px 0 rgba(179, 34, 31, 0.20);
+    transition: background-color 100ms ease;
+}
+
+.main-bt::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 500px;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity .7s ease;
+    background: linear-gradient(90deg, #FFC700 0%, #FF005C 100%);
+    box-shadow: 0 20px 30px 0 rgba(179, 34, 31, 0.20);
+    opacity: 0;
+}
+.main-bt:hover::before {
+    opacity: 1;
+}
+.main-bt:active {
+    background: #F43048;
+    box-shadow: 0 20px 30px 0 rgba(179, 34, 31, 0.20);
+}
+
+/* --------------------------------------top bar--------------------------------------------*/
+.dating-location {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dating-location span {
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    font-size: 19px;
+    padding-right: 10px;
+}
+
+.dating-location select {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.flag-countries {
+    width: 26px;
+    height: 100%;
+
+}
+
+
+/*------------------------------------------------ Header ----------------------------------------------*/
+
+header {
+    z-index: 2;
+    position: relative;
+    background: #230E2B;
+    margin: 20px auto;
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+header .logo {
+    background: #230E2B;
+    height: 100%;
+    width: 50px;
+}
+.site-name {
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.span-h2 {
+    position: absolute;
+    right: 180px;
+    color: #FFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+header a {
+    position: absolute;
+    right: 0;
+}
+
+/* ------------------------------------------- sing-in-ct ------------------------------------------------*/
+
+.sing-in-ct {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 846px;
+}
+
+.sing-in-ct h1 {
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 90px */
+    font-family: 'Rubik', sans-serif;
+}
+
+.sing-in-ct p {
+    margin-top: 10px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.sing-in-ct form {
+    margin: 50px auto 10px auto;
+    width: 380px;
+
+}
+
+.sing-in-ct form label {
+    margin-bottom: 10px;
+}
+.change-password {
+    display: block;
+    margin: 10px auto 0 auto;
+    color:  #925FA4;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+
+/*--------------------------------------------- footer ---------------------------------------------*/
+
+
+footer {
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 75%;
+
+}
+
+
+.nav-footer a {
+    color: #EEE;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+
+.nav-footer a:not(:last-child){
+    margin-right: 20px;
+}
+
+.margin-l-footer {
+    margin-left: 60px;
+    color: #EEE;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+
+/*-------------------------------------------------- a curtain ---------------------------------------------------*/
+
+.a-curtain {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(29, 11, 35, 0.85);
+    backdrop-filter: blur(2px);
+    transition: visibility, opacity ease .5s;
+}
+
+.a-curtain form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 50px;
+    background: #1C0A22;
+    width: 680px;
+    height: 352px;
+    flex-shrink: 0;
+}
+.a-curtain form h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 48px */
+}
+.a-curtain form span {
+    margin-top: 10px;
+    color: #6E447B;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.close {
+    opacity: 0;
+    visibility: hidden;
+}
+.a-curtain form button {margin-top: 10px}
+.a-curtain form label {margin-top: 10px}

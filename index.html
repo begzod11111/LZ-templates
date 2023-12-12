@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="a-curtain close">
+            <form action="" method="post">
+                <h2>Я не помню пароль</h2>
+                <span>Введи свой email и мы вышлем тебе инструкции по изменению пароля</span>
+                <label class="main-input-text">
+                    <img src="images/message%201.svg" alt="">
+                    <input class="" type="text" placeholder="Введите электронную почту">
+                </label>
+                <button class="main-bt">Запросить новый пароль</button>
+            </form>
+        </div>
+        <div class="dating-location">
+            <span>Знакомства по всему миру</span>
+            <img class="flag-countries" src="images/united-states-of-america%20(1).png">
+            <select>
+                <option>Америка</option>
+            </select>
+        </div>
+        <header>
+            <img class="logo" src="images/love-birds%201.svg">
+            <span class="site-name">LZnakomstva.com</span>
+            <span class="span-h2">Впервые здесь?</span>
+            <a class="registered main-link-bt" href="#">Регистрация</a>
+        </header>
+        <img class="banner_1" src="images/banner_1.svg">
+        <img class="banner_2" src="images/banner_2.svg">
+        <div class="sing-in-ct">
+            <h1>Знакомства без преград</h1>
+            <p>Для современного мира сплочённость команды профессионалов однозначно фиксирует необходимость системы обучения кадров, соответствующей насущным потребностям.</p>
+            <form action="" method="post">
+                <label class="main-input-text">
+                    <img src="images/message%201.svg" alt="">
+                    <input class="" type="text" placeholder="Введите электронную почту">
+                </label>
+                <label class="main-input-text">
+                    <img src="images/password%201.svg" alt="">
+                    <input class="" type="password" placeholder="Введите пароль">
+                </label>
+                <button class="main-bt">Войти</button>
+                <button class="change-password" id="change-password" type="button">Я не помню пароль</button>
+            </form>
+        </div>
+        <footer>
+            <nav class="nav-footer">
+                <a href="">О нас</a>
+                <a href="">Поддержка</a>
+                <a href="">Советы</a>
+                <a href="">Контакты</a>
+                <a href="">Правила оплаты</a>
+            </nav>
+            <a href="" class="margin-l-footer">Политика обработки персональных данных</a>
+            <select class="margin-l-footer">
+                <option>RU</option>
+            </select>
+            <span class="margin-l-footer">© Company 2021</span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('#change-password').click(function () {
+            $('.a-curtain').removeClass('close')
+        })
+    </script>
+</body>
+</html>
