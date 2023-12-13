@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #myCheckbox {
+            appearance: none;
+        }
+        label {
+            position: relative;
+            cursor: pointer;
+            padding-left: 25px; /* Размер галочки */
+        }
+
+        label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px; /* Размер галочки */
+            height: 20px; /* Размер галочки */
+            border: 1px solid #000; /* Цвет границы галочки */
+            background-color: #fff; /* Цвет фона галочки */
+        }
+
+        /*label:after {*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    left: 6px; !* Позиция галочки *!*/
+        /*    top: 3px; !* Позиция галочки *!*/
+        /*    width: 7px; !* Размер галочки *!*/
+        /*    height: 12px; !* Размер галочки *!*/
+        /*    border: solid #000; !* Цвет галочки *!*/
+        /*    border-width: 0 2px 2px 0; !* Форма галочки *!*/
+        /*    transform: rotate(45deg); !* Угол поворота галочки *!*/
+        /*    visibility: hidden; !* Скрыть галочку по умолчанию *!*/
+        /*}*/
+
+        #myCheckbox:checked + .ts:before {
+            background-color: #791e1e; /* Цвет фона галочки */
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox">
+    <label class="ts" for="myCheckbox"></label>
+</body>
+</html>
